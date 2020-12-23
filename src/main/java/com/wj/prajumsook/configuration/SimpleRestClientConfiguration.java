@@ -10,6 +10,10 @@ import org.springframework.context.annotation.Configuration;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
+// Based on :
+// https://stackoverflow.com/a/35104080/10936212
+// You can also check :
+// https://android.jlelse.eu/building-your-own-retrofit-call-adapter-b198169bab69
 
 @Configuration
 public class SimpleRestClientConfiguration
