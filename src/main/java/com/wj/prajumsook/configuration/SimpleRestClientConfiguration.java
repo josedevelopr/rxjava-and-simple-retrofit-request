@@ -22,7 +22,7 @@ public class SimpleRestClientConfiguration
     {   HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BASIC);
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
-
+        // For this example, I'm using a free api provided on https://ghibliapi.herokuapp.com/#section/Helper-Libraries/Elixir
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://ghibliapi.herokuapp.com")
                 .client(client)

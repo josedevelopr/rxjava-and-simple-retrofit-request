@@ -33,6 +33,7 @@ public class FilmController
 //        return filmApi.getFilmById(id);
 //    }
 
+    // You can request this api using "2baf70d1-42bb-4437-b551-e5fed5a87abe" as id
     @GetMapping("/simpleapi/{id}")
     public Film simpleFindById(@PathVariable String id)
     {
